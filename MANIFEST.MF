@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+HeldenPluginClass: datenxmlTestPlugin.HeldenStart.class
+Created-By: 1.6.0_22 (Sun Microsystems Inc.)
+Main-Class: datenxmlTestPlugin.HeldenStart.class
+

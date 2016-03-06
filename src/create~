@@ -1,0 +1,4 @@
+#!/bin/bash
+cp ../../helden5-full/src/helden/plugin/datenxmlplugin/datenXMLSchema.xsd .
+xjc -p jaxbGenerated.datenxml datenXMLSchema.xsd 
+ 

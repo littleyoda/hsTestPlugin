@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="daten">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="config" />
+				<xs:element ref="angaben" />
+				<xs:element ref="eigenschaften" />
+				<xs:element ref="münzen" />
+				<xs:element ref="vorteile" />
+				<xs:element ref="sonderfertigkeiten" />
+				<xs:element ref="verbilligtesonderfertigkeiten" />
+				<xs:element ref="talentliste" />
+				<xs:element ref="zauberliste" />
+				<xs:element ref="gegenstaende" />
+				<xs:element ref="verbindungen" />
+				<xs:element ref="kampfsets" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rsmodell" />
+				<xs:element ref="datum" />
+				<xs:element ref="uhrzeit" />
+				<xs:element ref="geldkreise" />
+				<xs:element ref="metatalente" />
+				<xs:element ref="zauberquellen" />
+				<xs:element ref="namenaufseiten" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rsmodell" type="xs:string" />
+	<xs:element name="datum" type="xs:NMTOKEN" />
+	<xs:element name="uhrzeit" type="xs:NMTOKEN" />
+	<xs:element name="geldkreise" type="xs:boolean" />
+	<xs:element name="metatalente" type="xs:boolean" />
+	<xs:element name="zauberquellen" type="xs:boolean" />
+	<xs:element name="grosserkommentar" type="xs:boolean" />
+	<xs:element name="namenaufseiten" type="xs:boolean" />
+	<xs:element name="angaben">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="augenfarbe" />
+				<xs:element ref="geburtstag" />
+				<xs:element ref="alter" />
+				<xs:element ref="geschlecht" />
+				<xs:element ref="groesse" />
+				<xs:element ref="gewicht" />
+				<xs:element ref="haarfarbe" />
+				<xs:element ref="stand" />
+				<xs:element ref="titel" />
+				<xs:element ref="name" />
+				<xs:element ref="bildPfad" />
+				<xs:element ref="aussehen" />
+				<xs:element ref="familie" />
+				<xs:element ref="notizen" />
+				<xs:element ref="profession" />
+				<xs:element ref="ap" />
+				<xs:element ref="gp" />
+				<xs:element ref="stufe40" />
+				<xs:element ref="stufe41" />
+				<xs:element ref="gilde" />
+				<xs:element ref="magisch" />
+				<xs:element ref="geweiht" />
+				<xs:element ref="rasse" />
+				<xs:element ref="kultur" />
+				<xs:element ref="aspregeneration" />
+				<xs:element ref="leregeneration" />
+				<xs:element ref="heldenversion" />
+				<xs:element ref="wundschwelle" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="augenfarbe" type="xs:string" />
+	<xs:element name="geburtstag" type="xs:string" />
+	<xs:element name="alter" type="xs:integer" />
+	<xs:element name="geschlecht" type="xs:string" />
+	<xs:element name="groesse" type="xs:integer" />
+	<xs:element name="haarfarbe" type="xs:string" />
+	<xs:element name="stand" type="xs:string" />
+	<xs:element name="titel" type="xs:string" />
+	<xs:element name="bildPfad" type="xs:string" />
+	<xs:element name="aussehen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="a0" />
+				<xs:element ref="a1" />
+				<xs:element ref="a2" />
+				<xs:element ref="a3" />
+				<xs:element ref="text" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a0" type="xs:string" />
+	<xs:element name="a1" type="xs:string" />
+	<xs:element name="a2" type="xs:string" />
+	<xs:element name="a3" type="xs:string" />
+	<xs:element name="familie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="f0" />
+				<xs:element ref="f1" />
+				<xs:element ref="f2" />
+				<xs:element ref="f3" />
+				<xs:element ref="f4" />
+				<xs:element ref="f5" />
+				<xs:element ref="text" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="f0" type="xs:string" />
+	<xs:element name="f1" type="xs:string" />
+	<xs:element name="f2" type="xs:string" />
+	<xs:element name="f3" type="xs:string" />
+	<xs:element name="f4" type="xs:string" />
+	<xs:element name="f5" type="xs:string" />
+	<xs:element name="notizen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="n0" />
+				<xs:element ref="n1" />
+				<xs:element ref="n2" />
+				<xs:element ref="n3" />
+				<xs:element ref="n4" />
+				<xs:element ref="n5" />
+				<xs:element ref="n6" />
+				<xs:element ref="n7" />
+				<xs:element ref="n8" />
+				<xs:element ref="n9" />
+				<xs:element ref="n10" />
+				<xs:element ref="n11" />
+				<xs:element ref="text" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="n0" type="xs:string" />
+	<xs:element name="n1" type="xs:string" />
+	<xs:element name="n2" type="xs:string" />
+	<xs:element name="n3" type="xs:string" />
+	<xs:element name="n4" type="xs:string" />
+	<xs:element name="n5" type="xs:string" />
+	<xs:element name="n6" type="xs:string" />
+	<xs:element name="n7" type="xs:string" />
+	<xs:element name="n8" type="xs:string" />
+	<xs:element name="n9" type="xs:string" />
+	<xs:element name="n10" type="xs:string" />
+	<xs:element name="n11" type="xs:string" />
+	<xs:element name="profession">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" />
+				<xs:element ref="textkurz" />
+				<xs:element name="tarnidentitaet" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="textkurz" type="xs:string" />
+	<xs:element name="ap">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gesamt" />
+				<xs:element ref="frei" />
+				<xs:element ref="genutzt" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="frei" type="xs:integer" />
+	<xs:element name="genutzt" type="xs:integer" />
+	<xs:element name="gp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="start" />
+				<xs:element ref="rest" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rest" type="xs:integer" />
+	<xs:element name="stufe40">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="akt" />
+				<xs:element ref="max" />
+				<xs:element ref="lang" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="stufe41">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="akt" />
+				<xs:element ref="max" />
+				<xs:element ref="lang" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gilde" type="xs:string" />
+	<xs:element name="magisch" type="xs:boolean" />
+	<xs:element name="geweiht" type="xs:boolean" />
+	<xs:element name="rasse" type="xs:string" />
+	<xs:element name="kultur" type="xs:string" />
+	<xs:element name="aspregeneration" type="xs:string" />
+	<xs:element name="leregeneration" type="xs:string" />
+	<xs:element name="heldenversion" type="xs:integer" />
+	<xs:element name="wundschwelle" type="xs:integer" />
+	<xs:element name="eigenschaften">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="geschwindigkeit" />
+				<xs:element ref="mut" />
+				<xs:element ref="klugheit" />
+				<xs:element ref="intuition" />
+				<xs:element ref="charisma" />
+				<xs:element ref="fingerfertigkeit" />
+				<xs:element ref="gewandtheit" />
+				<xs:element ref="konstitution" />
+				<xs:element ref="koerperkraft" />
+				<xs:element ref="sozialstatus" />
+				<xs:element ref="astralenergie" />
+				<xs:element ref="attacke" />
+				<xs:element ref="ausdauer" />
+				<xs:element ref="fernkampf-basis" />
+				<xs:element ref="initiative" />
+				<xs:element ref="karmaenergie" />
+				<xs:element ref="lebensenergie" />
+				<xs:element ref="magieresistenz" />
+				<xs:element ref="parade" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="geschwindigkeit" type="eigenschaftswerte" />
+	<xs:element name="astralenergie" type="eigenschaftswerteastrale" />
+	<xs:element name="ausvornachteile" type="xs:integer" />
+	<xs:element name="muinch2" type="xs:integer" />
+	<xs:element name="aussonderfertigkeiten" type="xs:integer" />
+	<xs:element name="professionmod" type="xs:integer" />
+	<xs:element name="grossemeditation" type="xs:integer" />
+	<xs:element name="pasprueckkaufbar" type="xs:integer" />
+	<xs:element name="aktinklrueckkaufbarepasp" type="xs:integer" />
+	<xs:element name="attacke" type="eigenschaftswerte" />
+	<xs:element name="ausdauer" type="eigenschaftswertezukaufbar503325" />
+	<xs:element name="charisma" type="eigenschaftswerte" />
+	<xs:element name="fernkampf-basis" type="eigenschaftswerte" />
+	<xs:element name="fingerfertigkeit" type="eigenschaftswerte" />
+	<xs:element name="gewandtheit" type="eigenschaftswerte" />
+	<xs:element name="initiative" type="eigenschaftswerte" />
+	<xs:element name="intuition" type="eigenschaftswerte" />
+	<xs:element name="karmaenergie" type="eigenschaftswertezukaufbar" />
+	<xs:element name="klugheit" type="eigenschaftswerte" />
+	<xs:element name="konstitution" type="eigenschaftswerte" />
+	<xs:element name="koerperkraft" type="eigenschaftswerte" />
+	<xs:element name="lebensenergie" type="eigenschaftswertezukaufbar503325" />
+	<xs:element name="magieresistenz" type="eigenschaftswertezukaufbar" />
+	<xs:element name="mut" type="eigenschaftswerte" />
+	<xs:element name="parade" type="eigenschaftswerte" />
+	<xs:element name="sozialstatus" type="eigenschaftswerte" />
+	<xs:complexType name="eigenschaftswerte">
+		<xs:sequence>
+			<xs:element ref="akt" />
+			<xs:element ref="start" />
+			<xs:element ref="modi" />
+			<xs:element ref="name" />
+			<xs:element ref="bereich" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="eigenschaftswertezukaufbar503325">
+		<xs:complexContent>
+			<xs:extension base="eigenschaftswertezukaufbar">
+				<xs:sequence>
+					<xs:element ref="akt50" />
+					<xs:element ref="akt33" />
+					<xs:element ref="akt25" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="eigenschaftswerteastrale">
+		<xs:complexContent>
+			<xs:extension base="eigenschaftswertezukaufbar">
+				<xs:sequence minOccurs="0">
+					<xs:element ref="ausvornachteile" />
+					<xs:element ref="muinch2" />
+					<xs:element ref="aussonderfertigkeiten" />
+					<xs:element ref="professionmod" />
+					<xs:element ref="grossemeditation" />
+					<xs:element ref="pasprueckkaufbar" />
+					<xs:element ref="aktinklrueckkaufbarepasp" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+	<xs:complexType name="eigenschaftswertezukaufbar">
+		<xs:complexContent>
+			<xs:extension base="eigenschaftswerte">
+				<xs:sequence>
+					<xs:element ref="kaufbar" />
+					<xs:element ref="gekauft" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="münzen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="münze" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="münze">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="anzahl" />
+				<xs:element ref="namekurz" />
+				<xs:element ref="waehrung" />
+				<xs:element ref="gewicht" />
+				<xs:element ref="wertinsilberstuecken" />
+				<xs:element ref="gesamtwertinsilberstuecken" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="namekurz" type="xs:string" />
+	<xs:element name="waehrung" type="xs:string" />
+	<xs:element name="wertinsilberstuecken" type="xs:decimal" />
+	<xs:element name="gesamtwertinsilberstuecken" type="xs:decimal" />
+	<xs:element name="vorteile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="vorteil" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="vorteil">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="bezeichner" />
+				<xs:element ref="name" />
+				<xs:element ref="kommentar" />
+				<xs:element ref="namemitkommentar" />
+				<xs:element ref="istvorteil" />
+				<xs:element ref="istnachteil" />
+				<xs:element minOccurs="0" ref="wert" />
+				<xs:element minOccurs="0" ref="istschlechteeigenschaft" />
+				<xs:element minOccurs="0" ref="istgabe" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="bereich" />
+				<!-- <xs:element minOccurs="0" ref="auswahlen" /> -->
+				<xs:element minOccurs="0"  name="auswahlen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" name="auswahl">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" name="name" type="xs:string" />
+										<xs:element minOccurs="0" name="wert" type="xs:decimal" />
+										<xs:element minOccurs="0" name="kommentar" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="istvorteil" type="xs:boolean" />
+	<xs:element name="istnachteil" type="xs:boolean" />
+	<xs:element name="istschlechteeigenschaft" type="xs:boolean" />
+	<xs:element name="istgabe" type="xs:boolean" />
+	<xs:element name="sonderfertigkeiten">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="sonderfertigkeit" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sonderfertigkeit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nameausfuehrlich" />
+				<xs:element ref="name" />
+				<xs:element ref="bezeichner" />
+				<xs:element ref="wirkung" />
+				<xs:element ref="dauer" />
+				<xs:element ref="kosten" />
+				<xs:element ref="probe" />
+				<xs:element minOccurs="0" name="auswahlen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="unbounded" name="auswahl">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="1" maxOccurs="1" ref="name" />
+										<xs:element maxOccurs="unbounded" ref="feld" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="kommentar" />
+				<xs:element ref="namemitkommentar" />
+				<xs:element maxOccurs="unbounded" ref="bereich" />
+				<xs:element minOccurs="0" ref="grad" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="wirkung" type="xs:string" />
+	<xs:element name="dauer" type="xs:string" />
+	<xs:element name="grad" type="xs:integer" />
+	<xs:element name="verbilligtesonderfertigkeiten">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded"
+					ref="verbilligtesonderfertigkeit" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="verbilligtesonderfertigkeit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nameausfuehrlich" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="talentliste">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="talent" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="zauberliste">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="zauber" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="zauber">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="variante" />
+				<xs:element ref="namemitvariante" />
+				<xs:element ref="nameausfuehrlich" />
+				<xs:element ref="wert" />
+				<xs:element ref="spezialisierungen" />
+				<xs:element ref="probe" />
+				<xs:element ref="probenwerte" />
+				<xs:element ref="bereich" />
+				<xs:element ref="komplexität" />
+				<xs:element ref="lernkomplexität" />
+				<xs:element ref="hauszauber" />
+				<xs:element ref="hauszauberformatiert" />
+				<xs:element ref="repräsentation" />
+				<xs:element ref="merkmale" />
+				<xs:element ref="zauberdauer" />
+				<xs:element ref="kosten" />
+				<xs:element ref="reichweite" />
+				<xs:element ref="wirkungsdauer" />
+				<xs:element ref="anmerkung" />
+				<xs:element ref="quelle" />
+				<xs:element ref="kontrollwert" />
+				<xs:element ref="mr" />
+				<xs:element ref="leittalent" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="variante" type="xs:string" />
+	<xs:element name="namemitvariante" type="xs:string" />
+	<xs:element name="hauszauber" type="xs:boolean" />
+	<xs:element name="hauszauberformatiert" type="xs:string" />
+	<xs:element name="repräsentation" type="xs:string" />
+	<xs:element name="merkmale" type="xs:string" />
+	<xs:element name="zauberdauer" type="xs:string" />
+	<xs:element name="wirkungsdauer" type="xs:string" />
+	<xs:element name="anmerkung" type="xs:string" />
+	<xs:element name="kontrollwert" type="xs:string" />
+	<xs:element name="mr" type="xs:string" />
+	<xs:element name="gegenstaende">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="gegenstand" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gegenstand">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="anzahl" />
+				<xs:element ref="grundlage" />
+				<xs:element ref="gewicht" />
+				<xs:element ref="gesamtgewicht" />
+				<xs:element ref="angelegt" />
+				<xs:element ref="angelegt1" />
+				<xs:element ref="angelegt2" />
+				<xs:element ref="einzelpreis" />
+				<xs:element ref="gesamtpreis" />
+				<xs:element ref="quelle" />
+				<xs:element minOccurs="0" ref="details" />
+				<xs:element ref="arten" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="details">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" ref="tier" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tier">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="eigenschaften">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="astralenergie" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="ausdauer" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="charisma" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="fingerfertigkeit" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="gefahrenwert" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="geschwindigkeit" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="geschwindigkeit2" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="geschwindigkeit3" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="gewandtheit" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="intuition" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="klugheit" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="konstitution" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="koerperkraft" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="lebensenergie" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="loyalitaet" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="magieresistenz" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="magieresistenz2" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+							<xs:element name="mut" minOccurs="0" maxOccurs="1"
+								type="xs:decimal" />
+							<xs:element name="ruestungsschutz" minOccurs="0"
+								maxOccurs="1" type="xs:decimal" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="vorteile" />
+				<xs:element ref="sonderfertigkeiten" />
+				<xs:element name="gattung" type="xs:string" />
+				<xs:element name="familie" type="xs:string" />
+				<xs:element name="groesse" type="xs:string" />
+				<xs:element name="ini">
+					<xs:complexType mixed="true">
+						<xs:attribute name="mul" type="xs:integer" />
+						<xs:attribute name="sum" type="xs:integer" />
+						<xs:attribute name="w" type="xs:integer" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="angriffe">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="angriff" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="at" use="required" type="xs:integer" />
+									<xs:attribute name="dk" use="required" />
+									<xs:attribute name="name" use="required" />
+									<xs:attribute name="pa" use="required" type="xs:integer" />
+									<xs:attribute name="tp" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="gesamtgewicht" type="xs:decimal" />
+	<xs:element name="angelegt" type="xs:boolean" />
+	<xs:element name="angelegt1" type="xs:boolean" />
+	<xs:element name="angelegt2" type="xs:boolean" />
+	<xs:element name="einzelpreis" type="xs:integer" />
+	<xs:element name="gesamtpreis" type="xs:integer" />
+	<xs:element name="arten" type="xs:string" />
+	<xs:element name="verbindungen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="verbindung" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="verbindung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="so" />
+				<xs:element ref="beschreibung" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="so" type="xs:integer" />
+	<xs:element name="beschreibung" type="xs:string" />
+	<xs:element name="kampfsets">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="kampfset" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="kampfset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="raufen" />
+				<xs:element ref="ringen" />
+				<xs:element ref="ausweichen" />
+				<xs:element ref="ausweichenausweichenmod" />
+				<xs:element ref="ausweichenakrobatikmod" />
+				<xs:element ref="ausweichenmod" />
+				<xs:element ref="geschwindigkeitinklbe" />
+				<xs:element ref="ini" />
+				<xs:choice>
+					<xs:element ref="ruestungeinfach" />
+					<xs:element ref="ruestungzonen" />
+				</xs:choice>
+				<xs:element ref="nahkampfwaffen" />
+				<xs:element ref="fernkampfwaffen" />
+				<xs:element ref="schilder" />
+				<xs:element ref="ruestungen" />
+			</xs:sequence>
+			<xs:attribute name="inbenutzung" use="required" type="xs:boolean" />
+			<xs:attribute name="nr" use="required" type="xs:integer" />
+			<xs:attribute name="tzm" use="required" type="xs:boolean" />
+			<xs:attribute name="defaultrsmodel" use="required" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="raufen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="at" />
+				<xs:element ref="pa" />
+				<xs:element ref="tp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ringen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="at" />
+				<xs:element ref="pa" />
+				<xs:element ref="tp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ausweichen" type="xs:integer" />
+	<xs:element name="ausweichenausweichenmod" type="xs:integer" />
+	<xs:element name="ausweichenakrobatikmod" type="xs:integer" />
+	<xs:element name="ausweichenmod" type="xs:integer" />
+	<xs:element name="geschwindigkeitinklbe" type="xs:integer" />
+	<xs:element name="ruestungzonen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="kopf" />
+				<xs:element ref="brust" />
+				<xs:element ref="ruecken" />
+				<xs:element ref="gesamt" />
+				<xs:element ref="bauch" />
+				<xs:element ref="linkerarm" />
+				<xs:element ref="rechterarm" />
+				<xs:element ref="linkesbein" />
+				<xs:element ref="rechtesbein" />
+				<xs:element ref="gesamtschutz" />
+				<xs:element ref="gesamtzonenschutz" />
+				<xs:element ref="behinderung" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ruestungeinfach">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gesamt" />
+				<xs:element ref="behinderung" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gesamtschutz" type="xs:integer" />
+	<xs:element name="nahkampfwaffen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="nahkampfwaffe" />
+			</xs:sequence>
+			<xs:attribute name="inbenutzung" use="required" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nahkampfwaffe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nummer" />
+				<xs:element ref="möglich" />
+				<xs:element ref="name" />
+				<xs:element ref="spalte2" />
+				<xs:element ref="dk" />
+				<xs:element ref="tp" />
+				<xs:element ref="tpkk" />
+				<xs:element ref="ini" />
+				<xs:element ref="wm" />
+				<xs:element ref="at" />
+				<xs:element ref="pa" />
+				<xs:element ref="tpinkl" />
+				<xs:element ref="bereich" />
+				<xs:element ref="bfmin" />
+				<xs:element ref="bfakt" />
+				<xs:element ref="waffentalentkurz" />
+				<xs:element ref="waffentalent" />
+				<xs:element ref="be" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="möglich" type="xs:boolean" />
+	<xs:element name="dk" type="xs:string" />
+	<xs:element name="tpkk">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="schrittweite" use="required" type="xs:integer" />
+					<xs:attribute name="schwelle" use="required" type="xs:integer" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="wm" type="xs:string" />
+	<xs:element name="tpinkl" type="xs:string" />
+	<xs:element name="bfmin" type="xs:integer" />
+	<xs:element name="bfakt" type="xs:integer" />
+	<xs:element name="waffentalentkurz" type="xs:string" />
+	<xs:element name="waffentalent" type="xs:string" />
+	<xs:element name="fernkampfwaffen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="fernkampfwaffe" />
+			</xs:sequence>
+			<xs:attribute name="inbenutzung" use="required" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fernkampfwaffe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nummer" />
+				<xs:element ref="name" />
+				<xs:element ref="spalte2" />
+				<xs:element ref="reichweite" />
+				<xs:element ref="tp" />
+				<xs:element ref="tpmod" />
+				<xs:element ref="at" />
+				<xs:element ref="ladezeit" />
+				<xs:element ref="kampftalent" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tpmod" type="xs:string" />
+	<xs:element name="ladezeit" type="xs:integer" />
+	<xs:element name="kampftalent" type="xs:string" />
+	<xs:element name="schilder">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="schild" />
+			</xs:sequence>
+			<xs:attribute name="inbenutzung" use="required" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="schild">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nummer" />
+				<xs:element ref="name" />
+				<xs:element ref="ini" />
+				<xs:element ref="mod" />
+				<xs:element ref="pa" />
+				<xs:element ref="bfmin" />
+				<xs:element ref="bfakt" />
+				<xs:element ref="bf" />
+				<xs:element ref="typ" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="mod" type="xs:string" />
+	<xs:element name="bf" type="xs:string" />
+	<xs:element name="typ" type="xs:string" />
+	<xs:element name="ruestungen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ruestung" />
+			</xs:sequence>
+			<xs:attribute name="inbenutzung" use="required" type="xs:boolean" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gewicht" type="xs:decimal" />
+	<xs:element name="name" type="xs:string" />
+	<xs:element name="text" type="xs:string" />
+	<xs:element name="gesamt" type="xs:integer" />
+	<xs:element name="start" type="xs:integer" />
+	<xs:element name="akt" type="xs:integer" />
+	<xs:element name="max" type="xs:integer" />
+	<xs:element name="lang" type="xs:string" />
+	<xs:element name="modi" type="xs:integer" />
+	<xs:element name="kaufbar" type="xs:integer" />
+	<xs:element name="gekauft" type="xs:integer" />
+	<xs:element name="akt50" type="xs:integer" />
+	<xs:element name="akt33" type="xs:integer" />
+	<xs:element name="akt25" type="xs:integer" />
+	<xs:element name="anzahl" type="xs:integer" />
+	<xs:element name="bezeichner" type="xs:string" />
+	<xs:element name="kommentar" type="xs:string" />
+	<xs:element name="namemitkommentar" type="xs:string" />
+	<xs:element name="wert" type="xs:integer" />
+	<xs:element name="bereich" type="xs:string" />
+	<xs:element name="feld">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="feldname" use="required" type="xs:string" />
+					<xs:attribute name="nr" use="required" type="xs:integer" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nameausfuehrlich" type="xs:string" />
+	<xs:element name="kosten" type="xs:string" />
+	<xs:element name="probe" type="xs:string" />
+	<xs:element name="talent">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="meisterhandwerk" />
+				<xs:element ref="leittalent" />
+				<xs:element ref="basis" />
+				<xs:element ref="nameausfuehrlich" />
+				<xs:element ref="wert" />
+				<xs:element ref="probe" />
+				<xs:element ref="probenwerte" />
+				<xs:element ref="nameausfuehrlichmitprobe" />
+				<xs:element ref="at" minOccurs="0" />
+				<xs:element ref="pa" minOccurs="0" />
+
+				<xs:element ref="sprachkomplexität" minOccurs="0" />
+				<xs:element ref="muttersprache" minOccurs="0" />
+				<xs:element ref="schriftmuttersprache" minOccurs="0" />
+				<xs:element ref="zweitlehrsprache" minOccurs="0" />
+
+				<xs:element ref="behinderung" />
+				<xs:element ref="mirakelplus" />
+				<xs:element ref="mirakelminus" />
+				<xs:element ref="metatalent" />
+
+				<xs:element ref="bereich" />
+				<xs:element ref="komplexität" />
+				<xs:element ref="lernkomplexität" />
+				<xs:element ref="spezialisierungen" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="metatalent" type="xs:boolean" />
+	<xs:element name="meisterhandwerk" type="xs:boolean" />
+	<xs:element name="leittalent" type="xs:boolean" />
+	<xs:element name="basis" type="xs:boolean" />
+	<xs:element name="mirakelminus" type="xs:boolean" />
+	<xs:element name="mirakelplus" type="xs:boolean" />
+	<xs:element name="muttersprache" type="xs:boolean" />
+	<xs:element name="nameausfuehrlichmitprobe" type="xs:string" />
+	<xs:element name="schriftmuttersprache" type="xs:boolean" />
+	<xs:element name="sprachkomplexität" type="xs:integer" />
+	<xs:element name="zweitlehrsprache" type="xs:boolean" />
+	<xs:element name="spezialisierungen" type="xs:string" />
+	<xs:element name="probenwerte" type="xs:string" />
+	<xs:element name="komplexität" type="xs:string" />
+	<xs:element name="lernkomplexität" type="xs:string" />
+	<xs:element name="reichweite" type="xs:string" />
+	<xs:element name="grundlage" type="xs:string" />
+	<xs:element name="at" type="xs:string" />
+	<xs:element name="pa" type="xs:string" />
+	<xs:element name="tp" type="xs:string" />
+	<xs:element name="ini" type="xs:integer" />
+	<xs:element name="quelle">
+		<xs:complexType mixed="true">
+			<xs:attribute name="buch" use="required" type="xs:string" />
+			<xs:attribute name="seite" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ruestung">
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="nummer" />
+				<xs:element ref="name" />
+				<xs:element ref="grundlage" />
+				<xs:element ref="be" />
+				<xs:element ref="rs" />
+				<xs:element ref="kopf" />
+				<xs:element ref="brust" />
+				<xs:element ref="ruecken" />
+				<xs:element ref="bauch" />
+				<xs:element ref="linkerarm" />
+				<xs:element ref="rechterarm" />
+				<xs:element ref="linkesbein" />
+				<xs:element ref="rechtesbein" />
+				<xs:element ref="gesamt" />
+				<xs:element ref="gesamtzonenschutz" />
+				<xs:element ref="behinderung" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rs" type="xs:string" />
+	<xs:element name="kopf" type="xs:integer" />
+	<xs:element name="brust" type="xs:integer" />
+	<xs:element name="ruecken" type="xs:integer" />
+	<xs:element name="bauch" type="xs:integer" />
+	<xs:element name="linkerarm" type="xs:integer" />
+	<xs:element name="rechterarm" type="xs:integer" />
+	<xs:element name="linkesbein" type="xs:integer" />
+	<xs:element name="rechtesbein" type="xs:integer" />
+	<xs:element name="gesamtzonenschutz" type="xs:integer" />
+	<xs:element name="behinderung" type="xs:string" />
+	<xs:element name="nummer" type="xs:integer" />
+	<xs:element name="spalte2" type="xs:string" />
+	<xs:element name="be" type="xs:string" />
+</xs:schema>
